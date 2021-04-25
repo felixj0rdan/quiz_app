@@ -11,12 +11,12 @@ function App() {
             .then(data => setData(data.results))
             // .then(data => console.log(data.results))
     },[])
-    var n=0
+    var n=0,s=-1
     return (
         <div>
             {data.map(data => (
               <div>
-                <Quiz ques={data.question} ans={data.correct_answer} opts={data.incorrect_answers} no={n+=1}/> 
+                <Quiz ques={data.question} ans={data.correct_answer} opts={data.incorrect_answers} no={n+=1} start= {s+=4}/> 
               </div>
             ))}
         </div>
