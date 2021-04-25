@@ -1,0 +1,11 @@
+.Ques {
+  color: blueviolet;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.wrong {
+  color: brown;
+}
+.right {
+  color: chartreuse;
+}

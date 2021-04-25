@@ -14,15 +14,15 @@ function App() {
 
     return (
         <div>
-           <h1>test</h1> 
+           {/* <h1>test</h1>  */}
             {/* <Quiz ques={data.question} ans="grbfv" opts="sdffexs" /> */}
             {data.map(data => (
               <div>
-                <Quiz ques={data.question} ans="grbfv" opts="sdffexs" /> 
+                <Quiz ques={data.question} ans={data.correct_answer} opts={data.incorrect_answers} /> 
                 {/* <h1>{data.question}</h1> */}
               </div>
             ))}
-           {JSON.stringify(data)}
+           {/* {JSON.stringify(data)} */}
         </div>
     )
 }
