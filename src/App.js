@@ -11,18 +11,14 @@ function App() {
             .then(data => setData(data.results))
             // .then(data => console.log(data.results))
     },[])
-
+    var n=0
     return (
         <div>
-           {/* <h1>test</h1>  */}
-            {/* <Quiz ques={data.question} ans="grbfv" opts="sdffexs" /> */}
             {data.map(data => (
               <div>
-                <Quiz ques={data.question} ans={data.correct_answer} opts={data.incorrect_answers} /> 
-                {/* <h1>{data.question}</h1> */}
+                <Quiz ques={data.question} ans={data.correct_answer} opts={data.incorrect_answers} no={n+=1}/> 
               </div>
             ))}
-           {/* {JSON.stringify(data)} */}
         </div>
     )
 }

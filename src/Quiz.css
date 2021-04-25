@@ -1,6 +1,7 @@
 .Ques {
-  color: blueviolet;
+  color: black;
   font-family: "Times New Roman", Times, serif;
+  font-size: x-large;
 }
 
 .wrong {
@@ -8,4 +9,24 @@
 }
 .right {
   color: chartreuse;
+}
+.card {
+  display: flex;
+  width: 50%;
+  margin-left: 25%;
+  border: white;
+  /* align-content: center; */
+  /* float: center; */
+}
+
+.btn-primary,
+.btn-danger,
+.btn-success {
+  width: 50%;
+  margin-left: 25%;
+  height: 50px;
+  border-radius: 15px;
+}
+.message {
+  margin-left: 47%;
 }
